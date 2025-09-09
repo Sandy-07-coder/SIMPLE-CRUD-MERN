@@ -47,7 +47,6 @@ const AddUser = () => {
 
             const isAlreadyExist = await api.post("/isUserExist", user);
             setIsEmailAlreadyExist(false);
-            console.log(isAlreadyExist);
             const res = await api.post("/user", user);
             setUsers([...users, res.data]);
         }

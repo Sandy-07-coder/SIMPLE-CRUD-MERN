@@ -15,7 +15,6 @@ function App() {
 
   //GET users
   useEffect(() => {
-    console.log("Compound mounts");
 
     api.get("/users")
       .then(res => {
@@ -26,8 +25,9 @@ function App() {
 
   return (
     <main className=' h-screen flex flex-col justify-evenly items-center bg-gray-900'>
-      <div>
-        <h1 className=' text-xl text-white'></h1>
+      <div className=' flex flex-row-reverse gap-4'>
+        <h1 className=' text-2xl text-white font-bold'>MERN CRUD APP</h1>
+        <img className=' size-12 pb-4' src="/app-logo.png" alt="" />
       </div>
       <AddUser />
       <UserTable />
