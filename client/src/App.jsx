@@ -15,7 +15,6 @@ function App() {
 
   //GET users
   useEffect(() => {
-    console.log("Compound mounts");
 
     api.get("/users")
       .then(res => {

@@ -44,7 +44,6 @@ const EditModal = () => {
             const res = await api.put(`/user/${ID}`, user);
             const allUsers = await api.get('/users');
             setUsers(allUsers.data);
-            console.log(users);
 
             setIsEditOpen(false);
 
