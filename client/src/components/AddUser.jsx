@@ -49,8 +49,6 @@ const AddUser = () => {
             setIsEmailAlreadyExist(false);
             const res = await api.post("/user", user);
             setUsers([...users, res.data]);
-            // make all of the fields to empty after submitting
-            setUser(null);
         }
         catch (err) {
             setIsEmailAlreadyExist(true);
