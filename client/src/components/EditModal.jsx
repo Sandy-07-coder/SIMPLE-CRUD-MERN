@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaX } from "react-icons/fa6";
-import { useIsEditOpen } from '../contexts/isEditOpenContext';
+import { useIsEditOpen } from '../contexts/IsEditOpenContext';
 import api from '../api/axios';
 import { useUser } from '../contexts/UserContext';
 
@@ -44,7 +44,6 @@ const EditModal = () => {
             const res = await api.put(`/user/${ID}`, user);
             const allUsers = await api.get('/users');
             setUsers(allUsers.data);
-            console.log(users);
 
             setIsEditOpen(false);
 
