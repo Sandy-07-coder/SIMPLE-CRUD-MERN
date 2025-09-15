@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaX } from "react-icons/fa6";
-import { useIsEditOpen } from '../contexts/IsEditOpenContext';
+import { useIsEditOpen } from '../contexts/isEditOpenContext';
 import api from '../api/axios';
 import { useUser } from '../contexts/UserContext';
 
