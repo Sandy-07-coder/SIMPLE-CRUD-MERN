@@ -4,7 +4,7 @@ import { useUser } from '../contexts/UserContext';
 import { MdDeleteOutline } from "react-icons/md";
 import { MdEdit } from "react-icons/md";
 import api from '../api/axios';
-import { useIsEditOpen } from '../contexts/IsEditOpenContext';
+import { useIsEditOpen } from '../contexts/isEditOpenContext';
 
 const Display = () => {
   const { users, setUsers } = useUser();

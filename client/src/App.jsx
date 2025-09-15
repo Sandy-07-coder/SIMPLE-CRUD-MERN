@@ -7,7 +7,7 @@ import { useUser } from './contexts/UserContext.jsx'
 import UserTable from './components/UserTable.jsx'
 import AddUser from './components/AddUser.jsx'
 import EditModal from './components/EditModal.jsx'
-import { useIsEditOpen } from './contexts/IsEditOpenContext.jsx'
+import { useIsEditOpen } from './contexts/isEditOpenContext.jsx'
 
 function App() {
   const { users, setUsers } = useUser();
